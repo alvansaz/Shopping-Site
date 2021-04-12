@@ -355,7 +355,7 @@ header {
 
 .special-offers-container {
     flex-direction: column;
-    padding: 4vh 20px;
+    padding: 3vh 20px;
     /*border: blue solid 2px;*/
 }
 
@@ -398,6 +398,20 @@ header {
 .offer-description p {
     font-size: 10px;
     display: inline-block;
+    padding-top: 10px;
+}
+
+.middle-banner {
+    position: relative;
+}
+
+.middle-banner img {
+    width: 100%;
+}
+
+.middle-one {
+    left: 65%;
+    top: 30%;
 }
 
 
