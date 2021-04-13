@@ -368,7 +368,7 @@ header {
     overflow: auto;
     white-space: nowrap;
     /*border: lightblue solid 2px;*/
-    gap: 20px;
+    gap: 30px;
 }
 
 .offer {
@@ -382,11 +382,11 @@ header {
 }
 
 .ofr-img {
-    width: 200px;
+    width: 250px;
 }
 
 .shopping-icon {
-    width: 30px;
+    width: 35px;
     padding: 5px;
     position: absolute;
     /*border: 3px purple solid;*/
