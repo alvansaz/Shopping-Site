@@ -353,40 +353,74 @@ header {
 }
 
 
-.special-offers-container {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.special-offers-container, .most-sales-container {
     flex-direction: column;
     padding: 3vh 20px;
     /*border: blue solid 2px;*/
 }
 
-.special-offers-container h3 {
+.special-offers-container h3, .most-sales-container h3 {
     /*border: greenyellow 2px solid;*/
     padding: 2vh 0;
 }
 
-.offers-tiles {
+.offers-tiles, .most-sales-tiles {
     overflow: auto;
     white-space: nowrap;
     /*border: lightblue solid 2px;*/
     gap: 30px;
 }
 
-.offer {
+.offer, .ms {
     /*border: red solid 2px;*/
     flex-direction: column;
 
 }
 
-.offer-image {
+.offer-image, .ms-image {
     position: relative;
 }
 
 .ofr-img {
-    width: 250px;
+    width: 35vw;
+}
+
+.ms-img {
+    width: 27vw;
 }
 
 .shopping-icon {
-    width: 35px;
+    width: 7vw;
     padding: 5px;
     position: absolute;
     /*border: 3px purple solid;*/
@@ -396,7 +430,7 @@ header {
 }
 
 .offer-description p {
-    font-size: 10px;
+    font-size: 2vw;
     display: inline-block;
     padding-top: 10px;
 }
@@ -414,6 +448,32 @@ header {
     top: 30%;
 }
 
+.ms-price-and-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ms-name {
+    display: none;
+}
+
+.ms:hover .ms-name {
+    display: block;
+}
+
+
+
+.ms-description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    font-size: 2vw;
+}
+
+
 
 /*-----------------------------------*/
 /*-----------------------------------*/
@@ -425,6 +485,10 @@ header {
         color: green;
     }
 
+    .ms:hover .ms-img {
+        width: 25vw;
+    }
+
     .none-es {
         display: none;
     }
@@ -434,6 +498,16 @@ header {
 @media only screen and (min-width: 600px) {
     .caption-description {
         color: red;
+    }
+
+    .offer-description p {
+        font-size: 2vw;
+        display: inline-block;
+        padding-top: 10px;
+    }
+
+    .ms:hover .ms-img {
+        width: 25vw;
     }
 
     .none-s {
@@ -450,7 +524,7 @@ header {
 
     .main {
         padding: 0 50px;
-        gap: 2vh;
+        gap: 5vh;
     }
 
     header {
@@ -488,8 +562,28 @@ header {
         padding: 2vw;
     }
 
-    .special-offers-container {
-        padding: 4vh 0;
+    .special-offers-container, .most-sales-container {
+        padding: 0;
+    }
+
+    .ofr-img {
+        width: 20vw;
+    }
+
+    .ms-img {
+        width: 20vw;
+    }
+
+    .ms:hover .ms-img {
+        width: 18vw;
+    }
+
+    .shopping-icon {
+        width: 3vw;
+    }
+
+    .offer-description p, .ms-description p {
+        font-size: 1.5vw;
     }
 
     .none-m {
@@ -505,6 +599,9 @@ header {
 @media only screen and (min-width: 992px) {
     .caption-description {
         color: yellowgreen;
+    }
+    .offer-description p {
+        font-size: 1.2vw;
     }
 }
 
